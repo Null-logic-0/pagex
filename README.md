@@ -126,7 +126,72 @@ pagex/
 
 # 🤝 **Contributing**
 
-Contributions, bug reports, and feature requests are welcome! Feel free to check the issues page to get involved.
+Contributions, bug reports, and feature requests are welcome!
+
+Feel free to check the issues page to get involved.
+
+
+1. Fork and Clone
+
+  First, fork the repository by clicking the "Fork" button at the top right of this page [1]. Then, clone your fork to your local machine:
+
+```bash
+    git clone https://github.com/Null-logic-0/pagex.git
+    cd pagex
+```
+
+2. Install Dependencies
+
+  Pagex is an Elixir project. Fetch the required dependencies using mix:
+
+```bash 
+    mix deps.get
+```
+
+3. Create a Branch
+
+  Create a new branch for your feature, improvement, or bug fix:
+
+```bash 
+    git checkout -b feature/my-awesome-feature
+```
+
+4. Make Your Changes
+
+  Write your code and implement your
+  changes. If you are adding a new feature or fixing a bug, please write tests to cover your changes to maintain the library's stability.
+
+5. Run Tests & Format Code
+
+Before committing, ensure that all tests pass and that the code adheres to the standard Elixir formatting rules:
+
+```bash 
+# Run the test suite
+mix test
+
+# Format the code
+mix format
+```
+
+6. Commit and Push
+
+Commit your changes with a descriptive message and push the branch to your fork:
+
+```bash 
+git add .
+git commit -m "Add my awesome feature"
+git push origin feature/my-awesome-feature
+```
+
+7. Open a Pull Request
+
+Go back to the main Pagex repository and you'll see a prompt to open a Pull Request. Submit your PR against the master branch and describe the changes you've made!
+
+### Why this is helpful:
+* **Elixir specific:** It uses the standard `mix` commands 
+(`mix deps.get`, `mix test`, `mix format`) that Elixir developers expect.
+
+* **Step-by-step:** It walks beginners completely through the process of interacting with a GitHub repo, making it much more inviting for open-source newcomers.
 
 ---
 
