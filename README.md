@@ -259,12 +259,3 @@ Go back to the main Pagex repository and you'll see a prompt to open a Pull Requ
 # 📜 **License**
 
 Pagex is open-source software released under the MIT [LICENSE](https://github.com/Null-logic-0/pagex/blob/master/LICENSE)
-
-```bash
-### Key Improvements Made:
-1. **Module Name Correction:** In the original, the quick start used `Pagex.paginate`. I changed it to `Pagex.paginate` to accurately match your module structure and repository name.
-2. **Visual Appeal:** Added standard emoji markers and horizontal dividers to make the visual hierarchy scannable.
-3. **Usage Expansion:** Provided a slight expansion to the Quick Start (e.g., showing how you can easily pass a custom Ecto query rather than just a module name).
-4. **Phoenix/LiveView Section:** Highlighted the Phoenix and JSON features mentioned in the comparison table by giving them their own brief callout paragraph.
-5. **Standardized Badges:** Adjusted the shield badges to use a uniform `flat-square` style for a highly professional aesthetic.
-```
