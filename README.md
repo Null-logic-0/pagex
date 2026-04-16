@@ -225,7 +225,7 @@ Go back to the main Pagex repository and you'll see a prompt to open a Pull Requ
 
 # 📜 **License**
 
-Pagex is open-source software released under the MIT [LICENSE](LICENSE).
+Pagex is open-source software released under the MIT [LICENSE](https://github.com/Null-logic-0/pagex/blob/master/LICENSE)
 
 ```bash
 ### Key Improvements Made:
