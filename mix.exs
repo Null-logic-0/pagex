@@ -27,6 +27,8 @@ defmodule Pagex.MixProject do
   defp deps do
     [
       {:ecto, "~> 3.10 or ~> 3.11"},
+      {:ecto_sql, "~> 3.10"},
+      {:postgrex, "~> 0.19"},
       {:phoenix_html, "~> 3.3 or ~> 4.0", optional: true},
       {:phoenix_live_view, "~> 0.18 or ~> 0.20", optional: true},
       {:jason, "~> 1.4", optional: true},
@@ -62,5 +64,6 @@ defmodule Pagex.MixProject do
   end
 
   defp elixirc_paths(:test), do: ["lib", "test/support"]
+  defp elixirc_paths(:dev), do: ["lib", "benchmarks/support"]
   defp elixirc_paths(_), do: ["lib"]
 end
