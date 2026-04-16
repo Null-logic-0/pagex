@@ -1,7 +1,7 @@
 defmodule Pagex.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.2.0"
   @source_url "https://github.com/Null-logic-0/pagex"
 
   def project do
@@ -29,8 +29,8 @@ defmodule Pagex.MixProject do
       {:ecto, "~> 3.10 or ~> 3.11"},
       {:ecto_sql, "~> 3.10"},
       {:postgrex, "~> 0.19"},
-      {:phoenix_html, "~> 3.3 or ~> 4.0", optional: true},
-      {:phoenix_live_view, "~> 0.18 or ~> 0.20", optional: true},
+      {:phoenix_html, "~> 4.0", optional: true},
+      {:phoenix_live_view, "~> 1.0", optional: true},
       {:jason, "~> 1.4", optional: true},
 
       # Dev only
