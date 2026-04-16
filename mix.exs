@@ -48,7 +48,7 @@ defmodule Pagex.MixProject do
 
   defp package do
     [
-      name: "pagex",
+      name: "pagex_pagination",
       licenses: ["MIT"],
       links: %{"GitHub" => @source_url},
       files: ~w(lib .formatter.exs mix.exs README.md LICENSE CHANGELOG.md)
@@ -57,7 +57,7 @@ defmodule Pagex.MixProject do
 
   defp docs do
     [
-      main: "Pagex",
+      main: "pagex",
       source_url: @source_url,
       extras: ["README.md", "CHANGELOG.md"]
     ]
