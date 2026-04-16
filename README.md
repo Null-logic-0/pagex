@@ -147,8 +147,8 @@ pagex/
 │   └── setup.exs
 ├── mix.exs
 ├── README.md
-├── LICENSE.md
-└── CHANGELOG.md
+├── CHANGELOG.md
+└── LICENSE
 ```
 ---- 
 
