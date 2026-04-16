@@ -61,6 +61,97 @@ Pagex offers a modern alternative to existing pagination libraries by combining 
 
 --- 
 
+# Pagination Benchmark
+
+Comparing **offset-based** vs **cursor-based** pagination — with and without `COUNT(*)` — across different page depths.
+
+---
+
+## Test Environment
+
+| Parameter | Value |
+|-----------|-------|
+| Page size | *(not specified)* |
+| Dataset size | *(not specified)* |
+| Database | *(add here)* |
+| Measurement | Average latency, p99 latency, memory usage per query |
+| Cache | *(add warm/cold if relevant)* |
+
+---
+
+## Key Findings
+
+- ✅ **Fastest overall:** `offset pagination (no count)`
+- ❌ **Worst performance:** `offset pagination with COUNT(*)` (~45× slower)
+- 🔄 **Cursor pagination:** slower per request, but more stable for deeper pagination
+- 💾 **Memory tradeoff:** cursor chaining increases memory usage significantly (~2×)
+
+---
+
+## Performance Results
+
+| Method | Throughput (ops/sec) | Avg Latency | Deviation | Median | p99 |
+|--------|----------------------|-------------|-----------|--------|-----|
+| Offset page 1 (no count) | 16.49K | 60.64 µs | ±12.79% | 59.67 µs | 81.04 µs |
+| Cursor first page | 15.44K | 64.77 µs | ±27.23% | 60.29 µs | 146.58 µs |
+| Offset page 100 (no count) | 12.18K | 82.07 µs | ±8.56% | 80.96 µs | 100.05 µs |
+| Cursor next page chain | 8.22K | 121.71 µs | ±9.15% | 119.92 µs | 160.47 µs |
+| Offset page 1 (with count) | 0.37K | 2731.43 µs | ±5.89% | 2738.56 µs | 3195.07 µs |
+| Offset page 100 (with count) | 0.36K | 2759.19 µs | ±5.48% | 2766.46 µs | 3148.26 µs |
+
+### Relative Speed (vs. fastest baseline)
+
+| Method | Relative Speed | Latency Delta |
+|--------|---------------|---------------|
+| Offset page 1 (no count) | 1.00× *(baseline)* | — |
+| Cursor first page | 1.07× slower | +4.13 µs |
+| Offset page 100 (no count) | 1.35× slower | +21.44 µs |
+| Cursor next page chain | 2.01× slower | +61.07 µs |
+| Offset page 1 (with count) | **45.05× slower** | +2670.79 µs |
+| Offset page 100 (with count) | **45.50× slower** | +2698.55 µs |
+
+---
+
+## Memory Usage
+
+| Method | Avg Memory | Deviation | Median | p99 |
+|--------|------------|-----------|--------|-----|
+| Offset page 1 (no count) | 55.06 KB | ±0.07% | 55.05 KB | 55.19 KB |
+| Cursor first page | 53.68 KB | ±0.02% | 53.67 KB | 53.72 KB |
+| Offset page 100 (no count) | 55.30 KB | ±0.02% | 55.30 KB | 55.34 KB |
+| Cursor next page chain | 109.01 KB | ±0.01% | 109.02 KB | 109.02 KB |
+| Offset page 1 (with count) | 76.89 KB | ±0.27% | 76.83 KB | 77.75 KB |
+| Offset page 100 (with count) | 77.10 KB | ±0.16% | 77.09 KB | 77.59 KB |
+
+### Relative Memory (vs. baseline)
+
+| Method | Relative Memory | Delta |
+|--------|----------------|-------|
+| Offset page 1 (no count) | 1.00× *(baseline)* | — |
+| Cursor first page | 0.97× | −1.38 KB |
+| Offset page 100 (no count) | 1.00× | +0.24 KB |
+| Cursor next page chain | **1.98×** | +53.95 KB |
+| Offset page 1 (with count) | 1.40× | +21.83 KB |
+| Offset page 100 (with count) | 1.40× | +22.04 KB |
+
+---
+
+## Conclusion
+
+Offset pagination without `COUNT(*)` performs best for shallow pages and simple use cases, but degrades with expensive counting operations.
+
+Cursor-based pagination provides more predictable scaling for deeper pagination, but introduces higher per-request latency and increased memory usage when chaining queries.
+
+### When to use what
+
+| Scenario | Recommendation |
+|----------|---------------|
+| Simple, shallow listing pages | ✅ Offset pagination (no count) |
+| Deep pagination / large datasets | ✅ Cursor pagination |
+| High-traffic hot paths | ⛔ Avoid `COUNT(*)` |
+
+---
+
 # 📦 **Installation**
  
 Add `pagex` to your list of dependencies in `mix.exs`:
