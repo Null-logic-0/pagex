@@ -2,17 +2,15 @@ defmodule Pagex do
   @moduledoc """
   Documentation for `Pagex`.
   """
+  alias Pagex.{Cursor, Offset}
 
-  @doc """
-  Hello world.
+  @doc "..."
+  def paginate(query, params, repo, opts \\ []) do
+    Offset.paginate(query, params, repo, opts)
+  end
 
-  ## Examples
-
-      iex> Pagex.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  @doc "..."
+  def paginate_cursor(query, params, repo, opts \\ []) do
+    Cursor.paginate(query, params, repo, opts)
   end
 end
