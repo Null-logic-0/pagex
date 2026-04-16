@@ -99,7 +99,7 @@ pagex/
 │       ├── cursor.ex             # Cursor pagination engine
 │       ├── phoenix/
 │             └── live_view.ex    # Phoenix LiveView helpers
-│               └── html.ex       # HTML helper functions
+│             └── html.ex       # HTML helper functions
 │ 
 │ 
 │               
