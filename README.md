@@ -13,6 +13,37 @@ Inspired by [Pagy (Ruby)](https://github.com/ddnexus/pagy), **Pagex** is designe
 
 ---
 
+## 🚀 **Example Integration**
+If you want to see a full, production-ready implementation of `pagex` in a Phoenix application, check out our example repository:
+
+👉 **[Simple Pagination Example](https://github.com/Null-logic-0/simple_pagination)**
+
+This example project demonstrates:
+- ✅ **Phoenix LiveView** pagination.
+- ✅ **JSON API** pagination.
+
+## 📺 **Demo Videos**
+
+### **Phoenix LiveView Integration**
+See how smoothly `pagex` handles real-time pagination in LiveView:
+
+<details open>
+  <summary>Click to view LiveView Demo</summary>
+  <video src="https://private-user-images.githubusercontent.com/157907877/579322071-4870b05a-ef99-4d16-a2f6-6beb6a9be095.mov?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzYzNTI4MzcsIm5iZiI6MTc3NjM1MjUzNywicGF0aCI6Ii8xNTc5MDc4NzcvNTc5MzIyMDcxLTQ4NzBiMDVhLWVmOTktNGQxNi1hMmY2LTZiZWI2YTliZTA5NS5tb3Y_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQxNlQxNTE1MzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMzU0ZjgzZDBkYTI4NjA5OTAwM2U5ZTkzMWFiNTJmM2FkNTMwNDNiODVkMGRlNmMwNDM0ZWJjY2E3NDE5ZWRiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9dmlkZW8lMkZxdWlja3RpbWUifQ.NSP8Yj4AduU6RCC9OjXsPtF4mroVIvhTf8zfNmLa6V8" controls="controls" muted="muted" style="max-width: 100%; border-radius: 10px;">
+  </video>
+</details>
+
+### **JSON API Response**
+Standardized metadata structure ready for any front-end:
+
+<details open>
+  <summary>Click to view JSON API Demo</summary>
+  <video src="https://private-user-images.githubusercontent.com/157907877/579322264-67de5491-e434-4c22-8cbe-c05562d74e94.mov?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzYzNTI4MzcsIm5iZiI6MTc3NjM1MjUzNywicGF0aCI6Ii8xNTc5MDc4NzcvNTc5MzIyMjY0LTY3ZGU1NDkxLWU0MzQtNGMyMi04Y2JlLWMwNTU2MmQ3NGU5NC5tb3Y_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQxNlQxNTE1MzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hYTE2NzZkOThkMTk1OWE4NjZlMmU2NWRiMmNhYmQwMGY5MzNjY2U4MmMwNWM5NTY4ZjU1NzdlMWU0NmE3MjA5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9dmlkZW8lMkZxdWlja3RpbWUifQ.lLot9DtrIHInpNZjYwjMWSe6nOEsLivan89yw0-Q2JM" controls="controls" muted="muted" style="max-width: 100%; border-radius: 10px;">
+  </video>
+</details>
+
+---
+
 # ✨ **Features & Comparison**
 
 Pagex offers a modern alternative to existing pagination libraries by combining performance with extreme simplicity.
