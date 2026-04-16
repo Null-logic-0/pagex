@@ -1,5 +1,7 @@
 # **Pagex** 📖
 
+<img width="1792" height="592" alt="github" src="https://github.com/user-attachments/assets/122356a0-efd8-4da4-aee1-fe8e19ce7a35" />
+
 
 [![Hex.pm](https://img.shields.io/hexpm/v/pagex.svg)](https://hex.pm/packages/pagex)
 [![Documentation](https://img.shields.io/badge/docs-hexdocs-blue.svg)](https://hexdocs.pm/pagex)
