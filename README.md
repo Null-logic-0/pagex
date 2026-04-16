@@ -3,7 +3,7 @@
 
 [![Hex.pm](https://img.shields.io/hexpm/v/pagex.svg)](https://hex.pm/packages/pagex)
 [![Documentation](https://img.shields.io/badge/docs-hexdocs-blue.svg)](https://hexdocs.pm/pagex)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Null-logic-0/pagex/blob/master/LICENSE)
 
 > **Fast, minimal, production-ready pagination for Ecto and Phoenix.**
 
