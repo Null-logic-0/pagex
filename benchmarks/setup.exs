@@ -1,12 +1,15 @@
 Application.ensure_all_started(:pagex)
-Benchmark.Repo.start_link()
 
+{:ok, _} = Benchmark.Repo.start_link()
+
+# Ensure DB exists
 case Ecto.Adapters.Postgres.storage_up(Benchmark.Repo.config()) do
   :ok -> IO.puts("Database created")
   {:error, :already_up} -> IO.puts("Database already exists")
   {:error, reason} -> raise "Could not create database: #{inspect(reason)}"
 end
 
+# Create table
 Benchmark.Repo.query!("""
   CREATE TABLE IF NOT EXISTS posts (
     id BIGSERIAL PRIMARY KEY,
