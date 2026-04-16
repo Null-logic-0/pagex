@@ -2,9 +2,10 @@
 
 <img width="1792" height="592" alt="github" src="https://github.com/user-attachments/assets/122356a0-efd8-4da4-aee1-fe8e19ce7a35" />
 
+---
 
-[![Hex.pm](https://img.shields.io/hexpm/v/pagex.svg)](https://hex.pm/packages/pagex)
-[![Documentation](https://img.shields.io/badge/docs-hexdocs-blue.svg)](https://hexdocs.pm/pagex)
+[![Hex.pm](https://img.shields.io/hexpm/v/pagex_pagination.svg)](https://hex.pm/packages/pagex_pagination)
+[![Documentation](https://img.shields.io/badge/docs-hexdocs-blue.svg)](https://hexdocs.pm/pagex_pagination)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Null-logic-0/pagex/blob/master/LICENSE)
 
 > **Fast, minimal, production-ready pagination for Ecto and Phoenix.**
@@ -160,7 +161,7 @@ Add `pagex` to your list of dependencies in `mix.exs`:
 # mix.exs
 def deps do
   [
-    {:pagex, "~> 0.2.1"}
+    {:pagex, "~> 0.2.3"}
   ]
 end
 ```
