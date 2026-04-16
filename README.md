@@ -44,6 +44,34 @@ Then, run mix deps.get in your terminal.
 
 ---
 
+# 📖 Documentation
+
+Full API documentation is available via HexDocs:
+
+👉 https://hexdocs.pm/pagex
+
+
+To generate and view the full API documentation locally:
+
+```bash
+mix docs
+```
+Then open:
+
+```bash 
+open doc/index.html
+```
+
+On Linux:
+
+```bash 
+xdg-open doc/index.html
+```
+
+Or simply open doc/index.html in your browser.
+
+---
+
 # 🚀 **Quick Start**
 
 Pagex provides a clean and straightforward API. You can paginate your Ecto queries using either Offset or Cursor-based pagination.
