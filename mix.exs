@@ -27,7 +27,7 @@ defmodule Pagex.MixProject do
   defp deps do
     [
       {:ecto, "~> 3.10 or ~> 3.11"},
-      {:ecto_sql, "~> 3.10"},
+      {:ecto_sql, "~> 3.11"},
       {:postgrex, "~> 0.19"},
       {:phoenix_html, "~> 4.0", optional: true},
       {:phoenix_live_view, "~> 1.0", optional: true},

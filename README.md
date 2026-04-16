@@ -38,7 +38,7 @@ Add `pagex` to your list of dependencies in `mix.exs`:
 # mix.exs
 def deps do
   [
-    {:pagex, "~> 0.1"}
+    {:pagex, "~> 0.2"}
   ]
 end
 ```
