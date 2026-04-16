@@ -26,8 +26,6 @@ defmodule Pagex.MixProject do
   defp deps do
     [
       {:ecto, "~> 3.10 or ~> 3.11"},
-
-      # Optional integrations
       {:phoenix_html, "~> 3.3 or ~> 4.0", optional: true},
       {:phoenix_live_view, "~> 0.18 or ~> 0.20", optional: true},
       {:jason, "~> 1.4", optional: true},
