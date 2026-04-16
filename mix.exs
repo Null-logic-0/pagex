@@ -8,7 +8,7 @@ defmodule Pagex.MixProject do
     [
       app: :pagex,
       version: @version,
-      elixir: "~> 1.19",
+      elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: description(),
@@ -17,20 +17,22 @@ defmodule Pagex.MixProject do
     ]
   end
 
-  # Run "mix help compile.app" to learn about applications.
   def application do
     [
       extra_applications: [:logger]
     ]
   end
 
-  # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ecto, "~> 3.11"},
-      {:phoenix_html, "~> 4.0", optional: true},
-      {:phoenix_live_view, "~> 0.20", optional: true},
+      {:ecto, "~> 3.10 or ~> 3.11"},
+
+      # Optional integrations
+      {:phoenix_html, "~> 3.3 or ~> 4.0", optional: true},
+      {:phoenix_live_view, "~> 0.18 or ~> 0.20", optional: true},
       {:jason, "~> 1.4", optional: true},
+
+      # Dev only
       {:ex_doc, "~> 0.30", only: :dev, runtime: false},
       {:benchee, "~> 1.3", only: :dev}
     ]
