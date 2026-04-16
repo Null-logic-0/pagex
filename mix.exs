@@ -6,7 +6,7 @@ defmodule Pagex.MixProject do
 
   def project do
     [
-      app: :pagex,
+      app: :pagex_pagination,
       version: @version,
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
@@ -57,7 +57,7 @@ defmodule Pagex.MixProject do
 
   defp docs do
     [
-      main: "pagex",
+      main: "Pagex",
       source_url: @source_url,
       extras: ["README.md", "CHANGELOG.md"]
     ]

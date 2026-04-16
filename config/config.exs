@@ -1,6 +1,6 @@
 import Config
 
-config :pagex, Benchmark.Repo,
+config :pagex_pagination, Benchmark.Repo,
   database: "pagex_benchmark",
   username: "postgres",
   password: "postgres",
