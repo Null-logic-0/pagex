@@ -338,7 +338,7 @@ git push origin feature/my-awesome-feature
 
 7. Open a Pull Request
 
-Go back to the main Pagex repository and you'll see a prompt to open a Pull Request. Submit your PR against the master branch and describe the changes you've made!
+Go back to the main Pagex repository, and you'll see a prompt to open a Pull Request. Submit your PR against the master branch and describe the changes you've made!
 
 ### Why this is helpful:
 * **Elixir specific:** It uses the standard `mix` commands 
@@ -351,3 +351,29 @@ Go back to the main Pagex repository and you'll see a prompt to open a Pull Requ
 # 📜 **License**
 
 Pagex is open-source software released under the MIT [LICENSE](https://github.com/Null-logic-0/pagex/blob/master/LICENSE)
+
+
+---
+
+# ❤️ Support This Project
+
+If this project helps you or saves you time, consider supporting its development. Even a small contribution makes a difference and helps keep it maintained and improved.
+
+ 
+<a href="https://github.com/sponsors/Null-logic-0"> <img src="https://img.shields.io/badge/GitHub%20Sponsors-❤️-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" /> </a> 
+<a href="https://ko-fi.com/lukatchelidze"> <img src="https://img.shields.io/badge/Ko--fi-Buy%20me%20a%20coffee-ff5e5b?style=for-the-badge&logo=ko-fi&logoColor=white" /> </a> 
+<a href="https://www.paypal.me/LukaTchlidze"> <img src="https://img.shields.io/badge/PayPal-Donate-00457C?style=for-the-badge&logo=paypal&logoColor=white" /> </a> 
+
+
+### 🚀 Why support?
+
+Your support helps with:
+
+- 🧠 Building new features
+- 🐛 Fixing bugs faster
+- ⚡ Keeping the project maintained
+- 📦 Adding better documentation and examples
+
+🙏 Thank you
+
+Even if you can’t donate, starring the repo ⭐ or sharing it is already a huge help.
