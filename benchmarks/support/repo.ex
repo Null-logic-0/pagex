@@ -9,6 +9,6 @@ defmodule Benchmark.Repo do
   offset and cursor pagination strategies under realistic load.
   """
   use Ecto.Repo,
-    otp_app: :pagex,
+    otp_app: :pagex_pagination,
     adapter: Ecto.Adapters.Postgres
 end

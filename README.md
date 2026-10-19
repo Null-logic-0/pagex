@@ -155,13 +155,13 @@ Cursor-based pagination provides more predictable scaling for deeper pagination,
 
 # 📦 **Installation**
  
-Add `pagex` to your list of dependencies in `mix.exs`:
+Add `pagex_pagination` to your list of dependencies in `mix.exs`:
 
 ```elixir
 # mix.exs
 def deps do
   [
-    {:pagex, "~> 0.2.3"}
+    {:pagex_pagination, "~> 0.2.3"}
   ]
 end
 ```
@@ -173,7 +173,7 @@ Then, run mix deps.get in your terminal.
 
 Full API documentation is available via HexDocs:
 
-👉 https://hexdocs.pm/pagex
+👉 https://hexdocs.pm/pagex_pagination
 
 
 To generate and view the full API documentation locally:

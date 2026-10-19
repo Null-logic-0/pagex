@@ -1,4 +1,4 @@
-Application.ensure_all_started(:pagex)
+Application.ensure_all_started(:pagex_pagination)
 
 {:ok, _} = Benchmark.Repo.start_link()
 

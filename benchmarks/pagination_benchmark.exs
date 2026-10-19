@@ -1,5 +1,5 @@
 # Ensure application is fully started (Repo, configs, ecto, etc.)
-{:ok, _} = Application.ensure_all_started(:pagex)
+{:ok, _} = Application.ensure_all_started(:pagex_pagination)
 
 # Start benchmark repo safely (avoid crash if already started)
 {:ok, _} = Benchmark.Repo.start_link()
